@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  data_loading:
+    cmd: python src/commentToxicity/pipeline/stage_01_data_loading.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: dff05321d45b5c9895433196a87df7d7
+      size: 145
+    - path: data/raw/jigsaw-toxic-comment-classification-challenge.zip
+      hash: md5
+      md5: a0159f30626e4c6a590f09d597c147d6
+      size: 55201987
+    - path: src/commentToxicity/pipeline/stage_01_data_loading.py
+      hash: md5
+      md5: d8e2c915ae7246ad34240472e1454179
+      size: 874
+    outs:
+    - path: data/interim/train.csv
+      hash: md5
+      md5: 791e42335500c447273a7dc85f58239e
+      size: 68802655

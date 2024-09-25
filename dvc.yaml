@@ -1,0 +1,9 @@
+stages:
+  data_loading:
+    cmd: python src/commentToxicity/pipeline/stage_01_data_loading.py
+    deps:
+      - src/commentToxicity/pipeline/stage_01_data_loading.py
+      - data/raw/jigsaw-toxic-comment-classification-challenge.zip
+      - config/config.yaml
+    outs:
+      - data/interim/train.csv

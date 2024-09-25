@@ -1,0 +1,5 @@
+data_root : data
+
+data_loading:
+  zip_file_path : data/raw/jigsaw-toxic-comment-classification-challenge.zip
+  destination_dir : data/interim
